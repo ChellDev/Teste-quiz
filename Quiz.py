@@ -32,7 +32,7 @@ if answer_1 == "b":
 else:
     print("Incorreto!")
 
-print("Qual o melhor carro? Valor da questao = 10 pts \n (A) Fusca \n (B) Uno \n (C) Vtr \n (D) Ferrari ")
+print("Qual o melhor carro? \n (10 pts) \n (A) Fusca \n (B) Uno \n (C) Vtr \n (D) Ferrari ")
 print("Valor = 10")
 answer_1 = input("Resposta: ").lower()
 
