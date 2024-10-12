@@ -2,6 +2,7 @@
 Aprendendo a jogar no GitHub
 
 """
+import os
 pontos = 0
 
 print("Seja muito bem vindo ao quiz!")
@@ -11,7 +12,8 @@ print(answer_user)
 if answer_user != "s":
     quit()
 
-print("Começando...")    
+print("Começando...")  
+os.system("cls")  
 print("Quem desenvolveu o jogo Grand Theft Auto (GTA)? \n (10 pts) \n (A) Rockstar Games \n (B) Ubisoft \n (C) Activision \n (D) EA \n ")
 
 answer_1 = input("Resposta: ").lower()
@@ -22,6 +24,7 @@ if answer_1 == "a" :
 else:
     print("Incorreto!")
 
+os.system("cls")
 print("Qual o protragonista do jogo GTA San Andreas? \n (10 pts) \n (A) Carlos John \n (B) Carl Jonhson \n (C) Carl Jaqueline \n (D) Carlos Jonhson ")
 print("Valor = 10")
 answer_1 = input("Resposta: ").lower()
@@ -31,7 +34,7 @@ if answer_1 == "b":
     pontos = pontos + 10
 else:
     print("Incorreto!")
-
+os.system("cls")
 print("Qual o melhor carro? \n (10 pts) \n (A) Fusca \n (B) Uno \n (C) Vtr \n (D) Ferrari ")
 print("Valor = 10")
 answer_1 = input("Resposta: ").lower()
@@ -41,7 +44,7 @@ if answer_1 == "c":
     pontos = pontos + 10
 else:
     print("Incorreto!")
-
+os.system("cls")
 print("Pontuação total =", pontos )
 
 
