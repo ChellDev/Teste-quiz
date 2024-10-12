@@ -3,9 +3,13 @@ Aprendendo a jogar no GitHub
 
 """
 import os
-pontos = 0
+
+nota = 0
 
 print("Seja muito bem vindo ao quiz!")
+nome = input("Qual é o seu nome?\n ")
+print("Seja bem vindo, "+ nome + "!")
+
 answer_user = input("Quer começar? (s/n) ").lower() # Aceitar resposta minuscula ou maiuscula
 print(answer_user)
 
@@ -19,7 +23,7 @@ print("Quem desenvolveu o jogo Grand Theft Auto (GTA)? \n (10 pts) \n (A) Rockst
 answer_1 = input("Resposta: ").lower()
 
 if answer_1 == "a" : 
-    pontos = pontos + 10
+    nota = nota + 10
     print("Correct!")
 else:
     print("Incorreto!")
@@ -31,7 +35,7 @@ answer_1 = input("Resposta: ").lower()
 
 if answer_1 == "b":
     print("Correct!")
-    pontos = pontos + 10
+    nota = nota + 10
 else:
     print("Incorreto!")
 os.system("cls")
@@ -41,11 +45,12 @@ answer_1 = input("Resposta: ").lower()
 
 if answer_1 == "c":
     print("Correct!")
-    pontos = pontos + 10
+    nota = nota + 10
 else:
     print("Incorreto!")
 os.system("cls")
-print("Pontuação total =", pontos )
+print("Sua pontuação total " + nome + " foi de =", nota , "pontos! ")
+
 
 
 
