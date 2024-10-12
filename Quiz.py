@@ -7,7 +7,7 @@ import os
 nota = 0
 
 print("Seja muito bem vindo ao quiz!")
-nome = input("Qual é o seu nome?\n ")
+nome = input("Qual é o seu nome?\n ") # Salva o nome do usuário
 print("Seja bem vindo, "+ nome + "!")
 
 answer_user = input("Quer começar? (s/n) ").lower() # Aceitar resposta minuscula ou maiuscula
@@ -51,8 +51,18 @@ else:
 os.system("cls")
 print("Sua pontuação total " + nome + " foi de =", nota , "pontos! ")
 
+answer_user = input("Poderia avaliar nosso Quiz? (s/n) ").lower() # Aceitar resposta minuscula ou maiuscula
+print(answer_user)
 
+if answer_user != "s":
+    quit()
+print("Aguarde...")  
+os.system("cls")
 
+print("O quanto nosso Quiz foi interessante para voçê? \n (A) Pouco interessante \n (B) Interessante \n (C) Muito interessante ? ")
+answer_1 = input("Você respondeu: ").lower()
+
+print("Muito obrigado pela avaliação!")
 
 
 
