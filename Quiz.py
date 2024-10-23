@@ -1,6 +1,8 @@
-""" Projeto para testar perguntas e respostas do usuário
-Aprendendo a jogar no GitHub
-
+""" * Projeto para testar perguntas e respostas do usuário
+    * Aprendendo a jogar no GitHub
+    * Usando .lower()
+    * Utilizando \n para quebra de linha
+    
 """
 import os
 
@@ -49,20 +51,22 @@ if answer_1 == "c":
 else:
     print("Incorreto!")
 os.system("cls")
-print("Sua pontuação total " + nome + " foi de =", nota , "pontos! ")
+print("Sua pontuação total {} foi de = {} pontos! ".format(nome, nota)) # {} substitui '+'
 
-answer_user = input("Poderia avaliar nosso Quiz? (s/n) ").lower() # Aceitar resposta minuscula ou maiuscula
+answer_user = input("Poderia avaliar nosso Quiz? (s/n) ").lower() # .lower() aceita resposta minuscula ou maiuscula
 print(answer_user)
 
 if answer_user != "s":
-    quit()
+        quit()
+
 print("Aguarde...")  
-os.system("cls")
 
-print("O quanto nosso Quiz foi interessante para voçê? \n (A) Pouco interessante \n (B) Interessante \n (C) Muito interessante ? ")
+print("O quanto nosso Quiz foi interessante para voçê? \n (A) Pouco interessante \n (B) Interessante \n (C) Muito interessante ")
 answer_1 = input("Você respondeu: ").lower()
-
+os.system("cls")
 print("Muito obrigado pela avaliação!")
+
+print(" Você totalizou",nota," de 30 pontos !")
 
 
 
